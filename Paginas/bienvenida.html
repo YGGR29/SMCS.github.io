@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Menú de Navegación Responsive</title>
+  <link rel="stylesheet" href="bienvenida.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header>
+  <h1>Semillero de Ciberseguridad</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="bienvenida.html">Inicio</a></li>
+    <li><a href="Nosotros.html">Nosotros</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contactos.html">Contacto</a></li>
+    <li><a href="login.html">Cerrar Sesión</a></li>
+  </ul>
+  <div class="hide">
+    <i class="fa fa-bars" aria-hidden="true"></i> Menú
+  </div>
+</nav>
+
+<main>
+  <section class="welcome">
+    <h2>Bienvenido al Semillero de Ciberseguridad</h2>
+    <p>Únete a nosotros para aprender y mejorar tus habilidades en ciberseguridad. Ofrecemos cursos, talleres y eventos para todos los niveles.</p>
+  </section>
+
+  <section class="courses">
+    <h2>Nuestros Cursos</h2>
+    <div class="course-card">
+      <i class="fa fa-shield" aria-hidden="true"></i>
+      <h3>Introducción a la Ciberseguridad</h3>
+      <p>Aprende los conceptos básicos de ciberseguridad y cómo proteger tus datos.</p>
+    </div>
+    <div class="course-card">
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      <h3>Seguridad en Redes</h3>
+      <p>Descubre cómo asegurar redes y proteger la información en tránsito.</p>
+    </div>
+    <div class="course-card">
+      <i class="fa fa-code" aria-hidden="true"></i>
+      <h3>Hacking Ético</h3>
+      <p>Explora técnicas de hacking ético y cómo usarlas para mejorar la seguridad.</p>
+    </div>
+  </section>
+</main>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+  $(".hide").on('click', function() {
+    $("nav ul").toggle('slow');
+  });
+</script>
+
+</body>
+</html>

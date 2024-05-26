@@ -1,0 +1,145 @@
+/* bienvenida.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url(imagenes/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+  }
+  
+  header {
+    background-color: #4e4d4d;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-bottom: 4px solid #017bab;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  nav {
+    background-color: #4e4d4d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 4px solid #017bab;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .hide {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hide i {
+    font-size: 24px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .welcome {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .welcome h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .welcome p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .courses {
+    text-align: center;
+  }
+  
+  .courses h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .course-card {
+    background-color: #252323;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+  }
+  
+  .course-card i {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .course-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .course-card p {
+    font-size: 16px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .hide {
+      display: block;
+    }
+  
+    .course-card {
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+  
